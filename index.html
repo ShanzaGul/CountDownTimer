@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Countdown Timer</title>
+  </head>
+  <body>
+<div class="container-fluid main">
+  <nav>
+    <div class="d-flex justify-content-center">
+      <p class="title text-center pt-2 pb-2">Countdown Timer</p>
+    </div>
+  </nav>
+  <div class="container Smain">
+    <div class="row justify-content-center submain">
+
+      <div class="col-lg-5 col-md-12">
+
+        <div id="eventInputBox" class="row justify-content-center pt-4 pb-4" >
+
+         <div class="column">
+
+           <div class="d-flex flex-column justify-content-center">
+
+
+                 <input id="eventName" type="text" placeholder="Event Name" class="p-2 mb-2">
+                 <div class="hidden text-center"> <p>Event Name Missing </p> </div>
+                  <input type="date" id="eventDate"  class="p-2 mb-2"  >
+                 <div class="hidden2 text-center"> <p>Event Date Missing</p> </div>
+
+               <!-- <input  id="eventTime" type="time" class="p-2 mb-2" value="00:00"> -->
+
+               <button id="func" class="btn btn-light mb-2">Start</button>
+
+
+
+           </div>
+
+         </div>
+
+         </div>
+
+       </div>
+
+      <div class="col-lg-5 col-md-12">
+          <div id="countdownBox">
+            <div class="row justify-content-center">
+               <div class="col-2">
+                 <div class="d-flex flex-column  align-items-center">
+                    <input class="p-2 text-center" id="days" type="number" value="0" readonly>
+                    <p class="p-2">Days</p>
+                </div>
+               </div>
+               <div class="col-1">
+                 <div class="d-flex flex-column  align-items-center">
+                    <p class="p-2">:</p>
+                </div>
+               </div>
+
+               <div class="col-2">
+                 <div class="d-flex flex-column  align-items-center">
+                    <input class="p-2 text-center" id="hours" type="number" value="0" readonly>
+                    <p class="p-2">Hours</p>
+                </div>
+               </div>
+               <div class="col-1">
+                 <div class="d-flex flex-column  align-items-center">
+                    <p class="p-2">:</p>
+                </div>
+               </div>
+
+               <div class="col-2">
+                 <div class="d-flex flex-column  align-items-center">
+                    <input class="p-2 text-center" id="minutes" type="number" value="0" readonly>
+                    <p class="p-2">Minutes</p>
+                </div>
+               </div>
+               <div class="col-1">
+                 <div class="d-flex flex-column  align-items-center">
+                    <p class="p-2">:</p>
+                </div>
+               </div>
+
+               <div class="col-2">
+                 <div class="d-flex flex-column  align-items-center">
+                    <input class="p-2 text-center" id="seconds" type="number" value="0" readonly>
+                    <p class="p-2">Seconds</p>
+                </div>
+               </div>
+
+
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="function.js" type="text/javascript">
+</script>
+  </body>
+</html>
